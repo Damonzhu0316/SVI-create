@@ -1,0 +1,36 @@
+# macOS / editor
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Python environments and generated files
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+*.log
+
+# Local credentials and private configuration
+.env
+.env.*
+!.env.example
+acquisition_service/ai_config.local.env
+
+# Local models, task data and generated archives
+*.pt
+*.onnx
+*.zip
+training_service/runs/*
+!training_service/runs/.gitkeep
+training_service/data/*
+!training_service/data/.gitkeep
+
+# Large external road dataset (about 7.4 GB)
+/2025年全国道路铁路数据/
+
+# Research imagery, intermediate files and generated validation reports
+/HNU_StreetView_Front_v6/data/
+/HNU_StreetView_Front_v6/docs/
+
+# Copyright application documents are not application source code
+/软件著作权申请材料/

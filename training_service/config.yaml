@@ -1,0 +1,11 @@
+# 街景智析本地 YOLO 训练默认参数；前端提交值将覆盖此配置。
+model: yolov8n.pt
+epochs: 100
+imgsz: 640
+batch: 8
+device: auto
+workers: 2
+patience: 30
+val_split: 0.2
+max_upload_mb: 2048
+max_unpacked_gb: 20
